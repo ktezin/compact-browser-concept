@@ -2,6 +2,8 @@ const addressbar = document.getElementById("addressbar");
 const urlbox = document.getElementById("urlbox");
 const tabs = document.getElementById("tabs");
 
+const tabHeaders = {}
+
 addressbar.addEventListener("focusout", (event) => {
 	addressbar.style.opacity = "0";
 	setTimeout(function () {
@@ -25,6 +27,10 @@ function addNewTab() {
 						<img src="https://www.youtube.com/favicon.ico" />
 						<p>Youtube - Homepage</p>
 					</button>
-					<button class="close">x</button>
+					<button class="close" onclick="closeTab()">x</button>
 				</div>`;
+}
+
+function closeTab() {
+
 }
