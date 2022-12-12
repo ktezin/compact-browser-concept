@@ -1,0 +1,135 @@
+:root {
+    --bg-color: rgb(235, 235, 235);
+    --text-color: #000;
+    --tab-color: #fff;
+    --tab-hover-color: rgb(240, 240, 240);
+    --tab-inactive-color: transparent;
+    --tab-inactive-hover-color: rgba(255, 255, 255, 0.212);
+    --btn-hover-color: rgb(240, 240, 240);
+    --titlebar-btn-hover-color: rgba(0, 0, 0, 0.068);
+    --close-btn-hover: rgb(219, 219, 219);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.titlebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    box-shadow: 0px 11px 12px -3px var(--shadow-color);
+    width: 100%;
+    height: 50px;
+}
+.titlebar * {
+    color: var(--text-color);
+}
+.controls {
+    display: flex;
+    height: 100%;
+}
+.controls button {
+    width: 40px;
+    border: none;
+    background-color: inherit;
+}
+.controls button:hover {
+    background-color: var(--titlebar-btn-hover-color);
+}
+#tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.tab-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.tab {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--tab-color);
+    box-shadow: -13px -10px 28px -10px var(--shadow-color);
+}
+.tab:hover {
+    background-color: var(--tab-hover-color);
+}
+.tab-inactive {
+    background-color: var(--tab-inactive-color);
+    box-shadow: 0px 0px 25px 3px var(--shadow-color);
+}
+.tab-inactive:hover {
+    background-color: var(--tab-inactive-hover-color);
+}
+.close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 6px;
+    border: none;
+    border-radius: 4px;
+    background-color: inherit;
+}
+.close:hover {
+    background-color: var(--close-btn-hover);
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.nav-button {
+    width: 40px;
+    height: 100%;
+    border: none;
+    background-color: var(--bg-color);
+}
+.nav-button:hover {
+    background-color: var(--titlebar-btn-hover-color);
+}
+#addressbar {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    height: 80%;
+    width: 50%;
+    opacity: 0;
+    border-radius: 6px;
+    background-color: var(--tab-color);
+    box-shadow: 0px 15px 30px 9px var(--shadow-color);
+    padding: 6px;
+    margin: 20px;
+    transition: all 1s;
+}
+#urlbox {
+    height: 100%;
+    width: 95%;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+}

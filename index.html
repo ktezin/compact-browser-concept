@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/9707863929.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div class="titlebar">
+			<div class="nav">
+				<button class="nav-button">
+					<i class="fa-solid fa-chevron-left fa-lg"></i>
+				</button>
+				<button class="nav-button">
+					<i class="fa-solid fa-chevron-right fa-lg"></i>
+				</button>
+				<button class="nav-button">
+					<i class="fa-solid fa-rotate-right fa-lg"></i>
+				</button>
+				<button class="nav-button" onclick="addNewTab()">
+					<i class="fa-solid fa-plus fa-lg"></i>
+				</button>
+			</div>
+			<div id="addressbar" disabled>
+				<i class="fa-solid fa-lock"></i>
+				<input type="text" id="urlbox" value="https://weirdorconfusing.com" />
+			</div>
+			<div id="tabs">
+				<div class="tab-header">
+					<button class="tab" onclick="showUrlbox()">
+						<img src="https://theuselessweb.com/favicon.ico" />
+						<p>Weird or Confusing</p>
+					</button>
+					<button class="close">x</button>
+				</div>
+			</div>
+			<div class="controls">
+				<button><i class="fa-solid fa-window-minimize fa-sm"></i></button>
+				<button><i class="fa-regular fa-window-maximize fa-sm"></i></button>
+				<button><i class="fa-solid fa-xmark fa-lg"></i></button>
+			</div>
+		</div>
+		<iframe src="https://weirdorconfusing.com"></iframe>
+		<script src="script.js"></script>
+	</body>
+</html>
